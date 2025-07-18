@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  
+}
+
+:root {
+    --cor-primaria: #E05D5D;
+    --cor-secundaria: #FFB344;
+    --neutro: #F9F9F9;
+    --preto: #131730;
+    --fonte-titulo: "Krona One", sans-serif;
+    --fonte-texto: 'Numans', sans-serif;
+    --degrade-azul: linear-gradient(203deg, #E05D5D 28%, #FFB344 64%);
+}
+
+body {
+    background: var(--degrade-azul);
+    background-repeat: no-repeat;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    background-color: var(--neutro);
+    margin-top: 64px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    width: 80%;
+    padding: 40px;
+
+    align-items: center;
+    border-radius: 16px;
+}
+
+.ilustracao{
+    width: 25%;
+}
+
+h2 {
+    font-family: var(--fonte-titulo);
+    color: var(--cor-primaria);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    padding: 20px 0 20px 0 ;
+}
+
+hr {
+    border: none;
+    border-bottom: 3px dotted var(--cor-primaria);
+    margin-bottom: 25px;
+}
+
+p {
+    font-family: var(--fonte-texto);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.input-item {
+    display: block;
+    padding: 10px 100px 10px 100px;
+    border-radius: 14px;
+    border: 1px solid var(--preto);
+    width: 307px;
+
+    font-family: var(--fonte-texto);
+}
+
+.input-item::placeholder {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    line-height: 50px;
+}
+
+.button-item {
+    padding: 7px 27px;
+    border-radius: 14px;
+    background-color: var(--cor-primaria);
+    color: var(--neutro);
+    font-family: var(--fonte-texto);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    border: none;
+    margin-top: 10px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.lista-item-container {
+    display: flex;
+    gap: 8px;
+}
+x
+ul {
+    list-style-type: none;
+}
+
+.input-checkbox {
+    display: none;
+}
+
+.checkbox-customizado {
+    width: 20px;
+    height: 20px;
+    background-color: var(--neutro);
+    border: 1px solid var(--preto);
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.checked {
+    background-color: var(--preto);
+    position: relative;
+}
+
+.checkbox-customizado.checked::after {
+    content: "";
+    position: absolute;
+    left: 30%;
+    top: -10%;
+    width: 5px;
+    height: 14px;
+
+    border-top: 2px solid var(--neutro);
+    border-left: 2px solid var(--neutro);
+
+    transform: rotate(-140deg);
+}
+
+.texto-data {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.item-lista-button {
+    border: none;
+    background-color: transparent;
+}
+
+.container-lista {
+    width: 100%;
+}
